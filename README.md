@@ -8,4 +8,6 @@ right), F (flip pieces only once), left arrow (rotate counterclockwise), right a
 the high-risk scoring zone (rows 15 to 19), and more. Features outside the main gameplay include experimenter’s mode (you can activate
 “game cheats” and modify how the game acts), app settings (among them is the ability to change the background color and themes),
 user and gameplay databases, game preset menus, a tutorial game, and the trophy cutscenes. You will beat the game if you can clear
-640 lines without topping out. This game will be open-source and licensed under an MIT license.
+enough lines without topping out. This game will be open-source and licensed under an MIT license.
+
+DISCLAIMER: neither the game nor the independent person who developed it are affiliated with The Tetris Company!
