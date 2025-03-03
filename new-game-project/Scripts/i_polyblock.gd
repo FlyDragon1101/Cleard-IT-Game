@@ -124,5 +124,5 @@ func _process(delta):
 
 
 func _on_pause():
-	var pause = get_node("res://experiments.gd")
+	var pause = get_node("res://scripts//experiments.gd")
 	pause.Pause()
