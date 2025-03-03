@@ -47,12 +47,12 @@ func _on_pause_canceled() -> void:
 
 func _on_pause_confirmed() -> void:
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://exp_menu.tscn")
+	get_tree().change_scene_to_file("res://scripts//exp_menu.tscn")
 
 
 func _on_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://Menu0.tscn")
+	get_tree().change_scene_to_file("res://scripts//Menu0.tscn")
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://EXPmode.tscn")
+	get_tree().change_scene_to_file("res://scripts//EXPmode.tscn")
