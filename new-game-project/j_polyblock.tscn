@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://ca1xy0me5tb1f"]
+
+[ext_resource type="Script" path="res://Scripts/i_polyblock.gd" id="1_4y7gn"]
+[ext_resource type="Texture2D" uid="uid://df3j8ugq17lch" path="res://Sprites/PolyBlocks/PolyBlocks.png" id="2_hymhu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a74ws"]
+atlas = ExtResource("2_hymhu")
+region = Rect2(10, 50, 30, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fs4cq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a74ws")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="J_polyblock" type="CharacterBody2D"]
+script = ExtResource("1_4y7gn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_fs4cq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-60, -20, -60, 20, 20, 20, 20, 60, 60, 60, 60, -20)

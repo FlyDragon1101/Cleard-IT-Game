@@ -1,0 +1,176 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy3be0tjlem2t"]
+
+[ext_resource type="Script" path="res://Scripts/experiments.gd" id="1_bawan"]
+
+[node name="EXPMenu" type="Node2D"]
+script = ExtResource("1_bawan")
+
+[node name="Level" type="HSlider" parent="."]
+offset_left = 1216.0
+offset_top = 320.0
+offset_right = 1536.0
+offset_bottom = 384.0
+min_value = 1.0
+max_value = 50.0
+value = 1.0
+tick_count = 50
+ticks_on_borders = true
+
+[node name="Audio" type="OptionButton" parent="."]
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 576.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 25
+selected = 0
+item_count = 4
+popup/item_0/text = "Music 1"
+popup/item_1/text = "Music 2"
+popup/item_1/id = 1
+popup/item_2/text = "Music 3"
+popup/item_2/id = 2
+popup/item_3/text = "Music 4"
+popup/item_3/id = 3
+
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = 1216.0
+offset_top = 512.0
+offset_right = 1536.0
+offset_bottom = 575.0
+theme_override_font_sizes/font_size = 20
+text = "Next queue is 3 pieces long"
+
+[node name="FallSpeed" type="CheckButton" parent="."]
+offset_left = 1216.0
+offset_top = 384.0
+offset_right = 1536.0
+offset_bottom = 447.0
+theme_override_font_sizes/font_size = 20
+text = "Disable fall speed"
+
+[node name="HoldPiece" type="CheckButton" parent="."]
+offset_left = 1216.0
+offset_top = 576.0
+offset_right = 1536.0
+offset_bottom = 639.0
+theme_override_font_sizes/font_size = 20
+text = "Hold piece"
+
+[node name="Play" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 768.0
+offset_right = 1056.0
+offset_bottom = 896.0
+theme_override_font_sizes/font_size = 30
+text = "PLAY GAME"
+
+[node name="Level2" type="Label" parent="."]
+offset_left = 1312.0
+offset_top = 280.0
+offset_right = 1440.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 30
+text = "Level"
+horizontal_alignment = 1
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_left = 384.0
+offset_top = 512.0
+offset_right = 512.0
+offset_bottom = 800.0
+select_mode = 1
+allow_reselect = true
+allow_rmb_select = true
+auto_height = true
+item_count = 10
+same_column_width = true
+item_0/text = "I"
+item_1/text = "J"
+item_2/text = "L"
+item_3/text = "O"
+item_4/text = "S"
+item_5/text = "T"
+item_6/text = "Z"
+item_7/text = "Tri"
+item_8/text = "TriV"
+item_9/text = "Duo"
+
+[node name="PieceSelect" type="Label" parent="."]
+offset_left = 368.0
+offset_top = 416.0
+offset_right = 528.0
+offset_bottom = 496.0
+theme_override_font_sizes/font_size = 25
+text = "Select pieces
+to generate"
+horizontal_alignment = 1
+
+[node name="Constant" type="CheckButton" parent="."]
+offset_left = 1216.0
+offset_top = 448.0
+offset_right = 1536.0
+offset_bottom = 511.0
+theme_override_font_sizes/font_size = 20
+text = "Constant fall speed"
+
+[node name="MenuButton" type="Label" parent="."]
+offset_left = 792.0
+offset_top = 256.0
+offset_right = 1064.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 25
+text = "Change Playfield Size"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Width" type="HSlider" parent="MenuButton"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = 128.0
+offset_right = 296.0
+offset_bottom = 192.0
+min_value = 4.0
+max_value = 20.0
+value = 10.0
+tick_count = 17
+ticks_on_borders = true
+
+[node name="Height" type="HSlider" parent="MenuButton"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = 64.0
+offset_right = 296.0
+offset_bottom = 128.0
+min_value = 12.0
+max_value = 24.0
+value = 20.0
+tick_count = 13
+ticks_on_borders = true
+
+[node name="Back" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 192.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 25
+text = "Back
+<<"
+
+[node name="Customize" type="Button" parent="."]
+offset_left = 1200.0
+offset_top = 768.0
+offset_right = 1552.0
+offset_bottom = 816.0
+theme_override_font_sizes/font_size = 25
+text = "Advanced customizations..."
+
+[node name="NEW RNG" type="CheckButton" parent="."]
+offset_left = 1216.0
+offset_top = 640.0
+offset_right = 1536.0
+offset_bottom = 703.0
+theme_override_font_sizes/font_size = 20
+text = "NEW RNG!"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
