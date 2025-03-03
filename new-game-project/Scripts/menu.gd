@@ -35,7 +35,7 @@ func level_up(lvl, lines=0):
 
 
 func _on_play_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Pregame.tscn")
+	get_tree().change_scene_to_file("res://scripts//Pregame.tscn")
 
 
 func _on_experi_mode_pressed() -> void:
@@ -45,8 +45,8 @@ func _on_experi_mode_pressed() -> void:
 
 
 func _on_play_exp_mode_confirmed() -> void:
-	get_tree().change_scene_to_file("res://exp_menu.tscn")
+	get_tree().change_scene_to_file("res://scripts//exp_menu.tscn")
 
 
 func _on_settings_pressed() -> void:
-	get_tree().change_scene_to_file("res://Settings.tscn")
+	get_tree().change_scene_to_file("res://scripts//Settings.tscn")
