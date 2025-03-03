@@ -23,11 +23,11 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://main_game.tscn")
+	get_tree().change_scene_to_file("res://scripts//main_game.tscn")
 
 
 func _on_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://Menu0.tscn")
+	get_tree().change_scene_to_file("res://scripts//Menu0.tscn")
 
 
 func _on_tutorial_pressed() -> void:
