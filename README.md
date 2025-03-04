@@ -25,4 +25,4 @@ Portions of the code were originally from:
   2. https://gist.github.com/zmcedillo/012ff15aa3018cb61b45e5bafb4b15ce
   3. https://github.com/BEsharkounet/Tetris-Godot-4
 
-with adjustments made
+with adjustments made to better fit this version of the game and translate other code into GDscript.
