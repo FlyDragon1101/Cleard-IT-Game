@@ -24,4 +24,4 @@ Portions of the code were originally from:
   1. https://github.com/BEsharkounet/Tetris-Godot-4
   2. https://www.youtube.com/playlist?list=PLuaz_ToMz_Hd9w8RECu3w8UG717KR2Yz6
 
-with adjustments made to better fit this version of the game and translate other code into GDscript.
+with adjustments made to better fit this version of the game.
