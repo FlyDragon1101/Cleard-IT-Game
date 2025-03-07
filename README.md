@@ -21,9 +21,7 @@ and the trophy cutscenes. You will beat the game if you can clear enough lines w
 DISCLAIMER: neither the game nor the independent person who developed it are affiliated with The Tetris Company!
 
 Portions of the code were originally from:
-  1. https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1
-  2. https://gist.github.com/zmcedillo/012ff15aa3018cb61b45e5bafb4b15ce
-  3. https://github.com/BEsharkounet/Tetris-Godot-4
-  4. https://www.youtube.com/playlist?list=PLuaz_ToMz_Hd9w8RECu3w8UG717KR2Yz6
+  1. https://github.com/BEsharkounet/Tetris-Godot-4
+  2. https://www.youtube.com/playlist?list=PLuaz_ToMz_Hd9w8RECu3w8UG717KR2Yz6
 
 with adjustments made to better fit this version of the game and translate other code into GDscript.
