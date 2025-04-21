@@ -4,17 +4,15 @@
 most lines (and earn the highest score) possible before the piece falling speed becomes too fast and your board tops off. However, some 
 features will set this game apart from the familiar games.
 
-  Once the game is complete, the controls to know are Q (pause), W (hold), A (slide left), S (push down), D (slide 
-right), F (flip pieces only once), left arrow (rotate counterclockwise), right arrow (clockwise), spacebar (hard drop), and 1 secret key
-(you will find this one out during gameplay).
+  Once the game is complete, the controls to know are <esc> (pause), W (hold, not yet fully functional), A (slide left), S (push down), D (slide 
+right), <left arrow> (rotate counterclockwise), <right arrow> (clockwise), and <spacebar> (hard drop).
 
   Gameplay features (for the complete game) include 10 pieces (7 tetra-blocks, 2 tri-blocks, and 1 duo-block), 50 levels
-(higher level = faster speed), a 3-piece next queue, a hold queue, a score logger, a line copy every 10 pieces without line clears,
-the high-risk scoring zone (rows 15 to 19), and more.
+(higher level = faster speed), a 3-piece next queue, a hold queue, a score logger, the high-risk scoring zone (rows 15 to 19), and more.
 
   Features outside the main gameplay include experimenter’s mode (you can activate “game cheats” and modify how the game acts), app settings
 (among them is the ability to change the background color and themes), user and gameplay databases, game preset menus, a tutorial game,
-and the trophy cutscenes. You will beat the game if you can clear enough lines without topping out.
+and the trophy cutscenes. You will beat the game if you can clear 640 lines without topping out.
 
   This game will be open-source and licensed under an MIT license.
 
