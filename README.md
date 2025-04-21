@@ -5,7 +5,7 @@ most lines (and earn the highest score) possible before the piece falling speed 
 features will set this game apart from the familiar games.
 
   Once the game is complete, the controls to know are <esc> (pause), W (hold, not yet fully functional), A (slide left), S (push down), D (slide 
-right), <left arrow> (rotate counterclockwise), <right arrow> (clockwise), and <spacebar> (hard drop).
+right), <left arrow> (rotate counterclockwise), <right arrow> (clockwise), <spacebar> (hard drop), and F11 (fullscreen).
 
   Gameplay features (for the complete game) include 10 pieces (7 tetra-blocks, 2 tri-blocks, and 1 duo-block), 50 levels
 (higher level = faster speed), a 3-piece next queue, a hold queue, a score logger, the high-risk scoring zone (rows 15 to 19), and more.
