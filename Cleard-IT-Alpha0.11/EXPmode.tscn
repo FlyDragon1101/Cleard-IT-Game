@@ -1,0 +1,553 @@
+[gd_scene load_steps=20 format=4 uid="uid://bymi6p61e7h1w"]
+
+[ext_resource type="Script" uid="uid://c8tesu8o2lobm" path="res://Scripts/i_polyblock.gd" id="1_0h1td"]
+[ext_resource type="Texture2D" uid="uid://ckux407qistk4" path="res://Sprites/PolyBlocks/Colors.png" id="2_0h1td"]
+[ext_resource type="Texture2D" uid="uid://cy7d6wyulry4y" path="res://Sprites/PlayfieldCorrect.png" id="3_4vthc"]
+[ext_resource type="Texture2D" uid="uid://dlmmu36ghi8di" path="res://Sprites/HoldBox.PNG" id="4_0gb6l"]
+[ext_resource type="Texture2D" uid="uid://kxohx8myqsry" path="res://Sprites/NextBox.PNG" id="5_a5wx0"]
+[ext_resource type="Texture2D" uid="uid://37vv0nb3h5oj" path="res://Sprites/PolyBlocks/PlayfieldComponents.png" id="5_jqaq7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0h1td"]
+resource_name = "Colors"
+texture = ExtResource("2_0h1td")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_oi3a0"]
+tile_size = Vector2i(40, 40)
+sources/1 = SubResource("TileSetAtlasSource_0h1td")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqb8a"]
+texture = ExtResource("2_0h1td")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7lf25"]
+tile_size = Vector2i(40, 40)
+sources/1 = SubResource("TileSetAtlasSource_jqb8a")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqaq7"]
+texture = ExtResource("2_0h1td")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cw76w"]
+texture = ExtResource("3_4vthc")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+0:17/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+9:17/0 = 0
+10:17/0 = 0
+11:17/0 = 0
+0:18/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+9:18/0 = 0
+10:18/0 = 0
+11:18/0 = 0
+0:19/0 = 0
+1:19/0 = 0
+2:19/0 = 0
+3:19/0 = 0
+4:19/0 = 0
+5:19/0 = 0
+6:19/0 = 0
+7:19/0 = 0
+8:19/0 = 0
+9:19/0 = 0
+10:19/0 = 0
+11:19/0 = 0
+0:20/0 = 0
+1:20/0 = 0
+2:20/0 = 0
+3:20/0 = 0
+4:20/0 = 0
+5:20/0 = 0
+6:20/0 = 0
+7:20/0 = 0
+8:20/0 = 0
+9:20/0 = 0
+10:20/0 = 0
+11:20/0 = 0
+0:21/0 = 0
+1:21/0 = 0
+2:21/0 = 0
+3:21/0 = 0
+4:21/0 = 0
+5:21/0 = 0
+6:21/0 = 0
+7:21/0 = 0
+8:21/0 = 0
+9:21/0 = 0
+10:21/0 = 0
+11:21/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oi3a0"]
+texture = ExtResource("5_jqaq7")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_pgjkq"]
+tile_size = Vector2i(40, 40)
+physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_jqaq7")
+sources/3 = SubResource("TileSetAtlasSource_oi3a0")
+sources/2 = SubResource("TileSetAtlasSource_cw76w")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sp6ef"]
+size = Vector2(160, 160)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_n5m2t"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_y0smj"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5nyn4"]
+distance = -201.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jtrbp"]
+distance = -12.0
+
+[node name="Experiments" type="Node2D"]
+process_mode = 1
+script = ExtResource("1_0h1td")
+
+[node name="Pieces" type="TileMapLayer" parent="."]
+top_level = true
+position = Vector2(760, 0)
+tile_set = SubResource("TileSet_oi3a0")
+
+[node name="LockedPieces" type="TileMapLayer" parent="."]
+top_level = true
+position = Vector2(760, 0)
+tile_set = SubResource("TileSet_7lf25")
+
+[node name="Playfield" type="TileMapLayer" parent="."]
+position = Vector2(760, 0)
+tile_map_data = PackedByteArray("AAAKABgAAgALABUAAAD//xgAAgAAABUAAAAAABgAAgAAABUAAAABABgAAgABABUAAAACABgAAgABABUAAAADABgAAgABABUAAAAEABgAAgABABUAAAAFABgAAgABABUAAAAGABgAAgABABUAAAAHABgAAgABABUAAAAIABgAAgABABUAAAAJABgAAgABABUAAAD//xAAAgAAAAcAAAAAABAAAgABAAcAAAABABAAAgABAAcAAAACABAAAgABAAcAAAADABAAAgABAAcAAAAEABAAAgABAAcAAAAFABAAAgABAAcAAAAGABAAAgAEAAoAAAAHABAAAgAEAAoAAAAIABAAAgAEAAoAAAAJABAAAgAEAAoAAAAKABAAAgALABIAAAAKABEAAgALABIAAAAKABIAAgALABIAAAAJABIAAgAEAAoAAAAIABIAAgAEAAoAAAAHABIAAgAEAAoAAAAGABIAAgAEAAoAAAAFABIAAgABAAcAAAAEABIAAgABAAcAAAADABIAAgABAAcAAAACABIAAgABAAcAAAACABEAAgABAAcAAAABABEAAgABAAcAAAAAABEAAgABAAcAAAD//xEAAgAAAAcAAAD//xIAAgAAAAcAAAAAABIAAgABAAcAAAABABIAAgABAAcAAAAEABEAAgABAAcAAAAFABEAAgABAAcAAAAGABEAAgAEAAoAAAAHABEAAgAEAAoAAAAIABEAAgAEAAoAAAAJABEAAgAEAAoAAAADABEAAgABAAcAAAD//xMAAgAAAAcAAAAAABMAAgABAAcAAAABABMAAgABAAcAAAACABMAAgABAAcAAAADABMAAgABAAcAAAAEABMAAgABAAcAAAAFABMAAgABAAcAAAAGABMAAgAEAAoAAAAHABMAAgAEAAoAAAAIABMAAgAEAAoAAAAJABMAAgAEAAoAAAAKABMAAgALABIAAAAKABQAAgALABIAAAAJABQAAgAEAAoAAAAIABQAAgAEAAoAAAAHABQAAgADAAsAAAAGABQAAgAEAAoAAAAFABQAAgAEAAoAAAAEABQAAgAEAAoAAAADABQAAgAEAAoAAAACABQAAgAEAAoAAAABABQAAgAEAAoAAAAAABQAAgABAAcAAAD//xQAAgAAAAcAAAD//xUAAgAAAAcAAAD//xYAAgAAAAcAAAAAABYAAgABAAcAAAABABYAAgAEAAoAAAACABYAAgAEAAoAAAADABYAAgAEAAoAAAAEABYAAgAEAAoAAAAFABYAAgAEAAoAAAAGABYAAgAEAAoAAAAHABYAAgAFAAkAAAAIABYAAgAEAAoAAAAJABYAAgAEAAoAAAAKABYAAgALABIAAAAKABcAAgALABIAAAAJABcAAgAEAAoAAAAIABcAAgAEAAoAAAAHABcAAgAFAAkAAAAGABcAAgAEAAoAAAAFABcAAgAEAAoAAAAEABcAAgAEAAoAAAADABcAAgAEAAoAAAACABcAAgAEAAoAAAABABcAAgAEAAoAAAAAABcAAgABAAcAAAD//xcAAgAAAAcAAAAAABUAAgABAAcAAAABABUAAgAEAAoAAAACABUAAgAEAAoAAAADABUAAgAEAAoAAAAEABUAAgAEAAoAAAAFABUAAgAEAAoAAAAGABUAAgAEAAoAAAAHABUAAgADAAwAAAAIABUAAgAEAAoAAAAJABUAAgAEAAoAAAAKABUAAgALABIAAAD//wMAAgAAAAAAAAAAAAMAAgABAAAAAAABAAMAAgABAAAAAAACAAMAAgABAAAAAAADAAMAAgABAAAAAAAEAAMAAgABAAAAAAAFAAMAAgABAAAAAAAGAAMAAgABAAAAAAAHAAMAAgABAAAAAAAIAAMAAgABAAAAAAAJAAMAAgABAAAAAAAKAAMAAgALAAAAAAAKAAQAAgALAAUAAAAJAAQAAgABAAEAAAAIAAQAAgABAAEAAAAHAAQAAgABAAEAAAAGAAQAAgABAAEAAAAFAAQAAgABAAEAAAAEAAQAAgABAAEAAAADAAQAAgABAAEAAAACAAQAAgABAAEAAAABAAQAAgABAAEAAAAAAAQAAgABAAEAAAD//wQAAgAAAAEAAAD//wUAAgAAAAEAAAAAAAUAAgABAAEAAAABAAUAAgABAAEAAAACAAUAAgABAAEAAAADAAUAAgABAAEAAAAEAAUAAgABAAEAAAAFAAUAAgABAAEAAAAGAAUAAgABAAEAAAAHAAUAAgABAAEAAAAIAAUAAgABAAEAAAAJAAUAAgABAAEAAAAKAAUAAgALAAUAAAAKAAYAAgALAAUAAAAJAAYAAgABAAEAAAAIAAYAAgABAAEAAAAHAAYAAgABAAEAAAAGAAYAAgABAAEAAAAFAAYAAgABAAEAAAAEAAYAAgABAAEAAAADAAYAAgABAAEAAAACAAYAAgABAAEAAAABAAYAAgABAAEAAAAAAAYAAgABAAEAAAD//wYAAgAAAAEAAAD//wcAAgAAAAEAAAAAAAcAAgABAAEAAAABAAcAAgABAAEAAAACAAcAAgABAAEAAAADAAcAAgABAAEAAAAEAAcAAgABAAEAAAAFAAcAAgABAAEAAAAGAAcAAgABAAEAAAAHAAcAAgABAAEAAAAIAAcAAgABAAEAAAAJAAcAAgABAAEAAAAKAAcAAgALAAUAAAAKAAgAAgALAAUAAAAJAAgAAgABAAUAAAAIAAgAAgABAAUAAAAHAAgAAgABAAUAAAAGAAgAAgABAAUAAAAFAAgAAgABAAUAAAAEAAgAAgABAAUAAAADAAgAAgABAAUAAAACAAgAAgABAAUAAAABAAgAAgABAAUAAAAAAAgAAgABAAEAAAD//wgAAgAAAAEAAAD//wkAAgAAAAYAAAAAAAkAAgABAAYAAAABAAkAAgABAAYAAAACAAkAAgABAAYAAAADAAkAAgABAAYAAAAEAAkAAgABAAYAAAAFAAkAAgABAAYAAAAGAAkAAgABAAYAAAAHAAkAAgABAAYAAAAIAAkAAgABAAYAAAAJAAkAAgABAAYAAAAKAAkAAgALAAYAAAAKAAoAAgALABIAAAAJAAoAAgABAAcAAAAIAAoAAgABAAcAAAAHAAoAAgABAAcAAAAGAAoAAgABAAcAAAAFAAoAAgABAAcAAAAEAAoAAgABAAcAAAADAAoAAgABAAcAAAACAAoAAgABAAcAAAABAAoAAgABAAcAAAAAAAoAAgABAAcAAAD//woAAgAAAAcAAAD//wsAAgAAAAcAAAAAAAsAAgABAAcAAAABAAsAAgABAAcAAAACAAsAAgABAAcAAAADAAsAAgABAAcAAAAEAAsAAgABAAcAAAAFAAsAAgABAAcAAAAGAAsAAgABAAcAAAAHAAsAAgABAAcAAAAIAAsAAgABAAcAAAAJAAsAAgABAAcAAAAKAAsAAgALABIAAAAJAAwAAgABAAcAAAAIAAwAAgABAAcAAAAHAAwAAgABAAcAAAAGAAwAAgABAAcAAAAFAAwAAgABAAcAAAAEAAwAAgABAAcAAAADAAwAAgABAAcAAAACAAwAAgABAAcAAAABAAwAAgABAAcAAAAAAAwAAgABAAcAAAD//wwAAgAAAAcAAAAKAAwAAgALABIAAAAJAA0AAgABAAcAAAAIAA0AAgABAAcAAAAHAA0AAgABAAcAAAAGAA0AAgABAAcAAAAFAA0AAgABAAcAAAAEAA0AAgABAAcAAAADAA0AAgABAAcAAAACAA0AAgABAAcAAAABAA0AAgABAAcAAAAAAA0AAgABAAcAAAD//w0AAgAAAAcAAAAKAA0AAgALABIAAAAKAA4AAgALABIAAAAJAA4AAgABAAcAAAAIAA4AAgABAAcAAAAHAA4AAgABAAcAAAAGAA4AAgABAAcAAAAFAA4AAgABAAcAAAAEAA4AAgABAAcAAAADAA4AAgABAAcAAAACAA4AAgABAAcAAAABAA4AAgABAAcAAAAAAA4AAgABAAcAAAD//w4AAgAAAAcAAAD//w8AAgAAAAcAAAAAAA8AAgABAAcAAAABAA8AAgABAAcAAAACAA8AAgABAAcAAAADAA8AAgABAAcAAAAEAA8AAgABAAcAAAAFAA8AAgABAAcAAAAGAA8AAgABAAcAAAAHAA8AAgAEAAoAAAAIAA8AAgAEAAoAAAAJAA8AAgAEAAoAAAAKAA8AAgALABIAAAA=")
+tile_set = SubResource("TileSet_pgjkq")
+
+[node name="Spawn" type="Area2D" parent="Playfield"]
+position = Vector2(199, 571)
+
+[node name="GameOver" type="CollisionShape2D" parent="Playfield/Spawn"]
+position = Vector2(1, -491)
+shape = SubResource("RectangleShape2D_sp6ef")
+debug_color = Color(1, 0, 0, 0.501961)
+
+[node name="Matrix" type="StaticBody2D" parent="Playfield"]
+position = Vector2(199, 571)
+
+[node name="Floor" type="CollisionShape2D" parent="Playfield/Matrix"]
+position = Vector2(1, 389)
+shape = SubResource("WorldBoundaryShape2D_n5m2t")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Playfield/Matrix"]
+position = Vector2(-199, -11)
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_y0smj")
+
+[node name="RightWall" type="CollisionShape2D" parent="Playfield/Matrix"]
+position = Vector2(0, -11)
+rotation = -1.5708
+shape = SubResource("WorldBoundaryShape2D_5nyn4")
+
+[node name="Top" type="CollisionShape2D" parent="Playfield/Matrix"]
+position = Vector2(1, -559)
+rotation = 3.14159
+shape = SubResource("WorldBoundaryShape2D_jtrbp")
+
+[node name="Stats" type="Label" parent="."]
+offset_left = 1260.0
+offset_top = 800.0
+offset_right = 1560.0
+offset_bottom = 843.0
+theme_override_font_sizes/font_size = 25
+text = "Score: 0000000
+"
+horizontal_alignment = 1
+
+[node name="HighScore" type="Label" parent="."]
+offset_left = 1260.0
+offset_top = 840.0
+offset_right = 1560.0
+offset_bottom = 883.0
+theme_override_font_sizes/font_size = 25
+text = "High score: 0000001
+"
+horizontal_alignment = 1
+
+[node name="Lines" type="Label" parent="."]
+offset_left = 1260.0
+offset_top = 880.0
+offset_right = 1560.0
+offset_bottom = 923.0
+theme_override_font_sizes/font_size = 25
+text = "Lines cleared: 000"
+horizontal_alignment = 1
+
+[node name="Level" type="Label" parent="."]
+offset_left = 1260.0
+offset_top = 920.0
+offset_right = 1560.0
+offset_bottom = 963.0
+theme_override_font_sizes/font_size = 25
+text = "Level: 01/50"
+horizontal_alignment = 1
+
+[node name="Hold" type="Label" parent="."]
+offset_left = 520.0
+offset_top = 100.0
+offset_right = 616.0
+offset_bottom = 143.0
+theme_override_font_sizes/font_size = 25
+text = "HOLD"
+horizontal_alignment = 1
+
+[node name="Next" type="Label" parent="."]
+offset_left = 1280.0
+offset_top = 80.0
+offset_right = 1440.0
+offset_bottom = 123.0
+theme_override_font_sizes/font_size = 25
+text = "NEXT QUEUE"
+horizontal_alignment = 1
+
+[node name="ScoreLog" type="Label" parent="."]
+offset_left = 440.0
+offset_top = 440.0
+offset_right = 680.0
+offset_bottom = 1000.0
+theme_override_font_sizes/font_size = 25
+text = "Score Log"
+horizontal_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+
+[node name="HoldBox" type="Sprite2D" parent="."]
+position = Vector2(560, 280)
+scale = Vector2(2, 2)
+texture = ExtResource("4_0gb6l")
+
+[node name="NextBox" type="Sprite2D" parent="."]
+position = Vector2(1360, 440)
+scale = Vector2(2, 2)
+texture = ExtResource("5_a5wx0")
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+top_level = true
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1200.0
+offset_bottom = 320.0
+
+[node name="Game over" type="Label" parent="Panel2"]
+top_level = true
+layout_mode = 0
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1200.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "TOP OUT!
+Click to restart
+Your score is: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pause" type="ConfirmationDialog" parent="."]
+process_mode = 2
+auto_translate_mode = 1
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+title = "PAUSED"
+initial_position = 1
+size = Vector2i(800, 320)
+max_size = Vector2i(1920, 1080)
+content_scale_aspect = 1
+content_scale_factor = 2.0
+ok_button_text = "Quit"
+dialog_text = "Do you want to quit?"
+dialog_autowrap = true
+cancel_button_text = "Continue"
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+top_level = true
+offset_left = 700.0
+offset_top = 440.0
+offset_right = 1220.0
+offset_bottom = 600.0
+
+[node name="YouWin" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 520.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 40
+text = "YOU WIN!
+You have cleared 640 lines!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="canceled" from="Pause" to="." method="_on_pause_canceled"]
+[connection signal="confirmed" from="Pause" to="." method="_on_pause_confirmed"]
